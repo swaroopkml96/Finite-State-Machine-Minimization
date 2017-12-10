@@ -68,7 +68,7 @@ saw00 saw00 0
 saw00 start 1
 ```
 
-![alt text](https://github.com/swaroopkml96/Finite-State-Machine-Minimization/edit/master/ex_graph2.png "Requires matplotlib")
+![Visualizing the above finite state machine](/ex_graph2.png "Requires matplotlib")
 
 The filled line is for 0, and the dotted line is for 1 and dges from node 1 to node 2 have to same color as node 1.
 
