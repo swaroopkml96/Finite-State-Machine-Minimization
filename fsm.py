@@ -47,9 +47,7 @@ class graph:
     #   returns a subgraph by following the edges
     #   to a depth of 'depth'
     # getNodes(filter): return all nodes that satisfy the filter.
-    #   If no filter given, return all nodes
     # getEdges(filter): return all edges that satisfy the filter.
-    #   If no filter given, return all nodes
     # make(): form a dictionary of nodes to access quickly
     def __init__(self, nodes, edges):
         self.nodes = nodes
@@ -178,7 +176,7 @@ class FSM(graph):
     
     def minimize(self):
         # returns a minimized FSM
-        # Make a copy of this FSM called COPY
+        # Make a deep copy of this FSM called dupl
         # First, make a list of nodes, each node representing
         #   a pair of nodes. Name: "indexOfNode1 indexOfNode2"
         # For each pair (each node), create an edge to the pair
@@ -227,7 +225,7 @@ class FSM(graph):
             # which reduces to, n*i + i(i-1)/2 + (j-i)
             pairIndexon0 = n1on0index*len(self.nodes)-int((n1on0index)*(n1on0index-1)/2)+n2on0index-n1on0index
             pairIndexon1 = n1on1index*len(self.nodes)-int((n1on1index)*(n1on1index-1)/2)+n2on1index-n1on1index
-            # note: edges are directed in reverse. This is to help in recursive marking
+            # note: edges are directed in reverse. This is to help in recursive marking.
             pedges.append(edge(pairs[pairIndexon0], p, "", True))
             pedges.append(edge(pairs[pairIndexon1], p, "", True))
         pairGraph = graph(pairs, pedges)
