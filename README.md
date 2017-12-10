@@ -74,7 +74,7 @@ saw00 start 1
 
 ![Visualizing the above finite state machine](/ex_graph2.png "Requires matplotlib")
 
-The filled line is for 0, and the dotted line is for 1 and dges from node 1 to node 2 have to same color as node 1.
+The filled line is for 0, and the dotted line is for 1 and edges from node 1 to node 2 have to same color as node 1.
 
 #### Good luck! Any contributions are welcome.
   
