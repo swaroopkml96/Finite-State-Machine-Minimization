@@ -1,6 +1,10 @@
 # Finite-State-Machine-Minimization
 ### Python program to visualize, run and minimize finite state machines
 
+#### [Example Jupyter notebook](/fsm.ipynb)
+
+#### [Module](/fsm.py)
+
 **Finite state machines lie at the heart of computation.**
 A real computer can be modelled as a finite state machine. This has led many to speculate that everything that can be simulated in a computer, including the weather, the human brain and the whole universe are finite state machines.
 
