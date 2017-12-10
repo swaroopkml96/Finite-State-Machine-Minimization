@@ -54,5 +54,23 @@ write it to file:
 
 ``minimized_fsm.toFile(path_to_file)``
 
+Example finite state machine:
+
+```
+states: start saw0 saw00 
+init: start
+final: saw00 
+start saw0 0
+start start 1
+saw0 saw00 0
+saw0 start 1
+saw00 saw00 0
+saw00 start 1
+```
+
+![alt text](https://github.com/swaroopkml96/Finite-State-Machine-Minimization/edit/master/ex_graph2.png "Requires matplotlib")
+
+The filled line is for 0, and the dotted line is for 1 and dges from node 1 to node 2 have to same color as node 1.
+
 #### Good luck! Any contributions are welcome.
   
