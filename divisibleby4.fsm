@@ -1,0 +1,14 @@
+# Finite state machine that recognizes the set of numbers divisible by 4
+states: start saw0 saw00 saw000 saw0000
+init: start
+final: saw00 saw000 saw0000 saw0000
+start saw0 0
+start start 1
+saw0 saw00 0
+saw0 start 1
+saw00 saw000 0
+saw00 start 1
+saw000 saw0000 0
+saw000 start 1
+saw0000 saw0000 0
+saw0000 start 1

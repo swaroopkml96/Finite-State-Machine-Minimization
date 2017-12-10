@@ -1,0 +1,10 @@
+# Minimized version of the divisible by 4 FSM
+states: start saw0 saw00 
+init: start
+final: saw00 
+start saw0 0
+start start 1
+saw0 saw00 0
+saw0 start 1
+saw00 saw00 0
+saw00 start 1
