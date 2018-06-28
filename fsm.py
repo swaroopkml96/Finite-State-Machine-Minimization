@@ -229,10 +229,6 @@ class FSM(graph):
             pedges.append(edge(pairs[pairIndexon0], p, "", True))
             pedges.append(edge(pairs[pairIndexon1], p, "", True))
         pairGraph = graph(pairs, pedges)
-        print("Nodes of pair graph:")
-        print(list(map(lambda x: str(x), pairGraph.nodes)))
-        print("Edges of pair graph: ")
-        print(list(map(lambda x: str(x), pairGraph.edges)))
         distinguished = []
         for p in pairGraph.getNodes(lambda x: x):
             # If p is distinguishable, get subgraph of pairGraph from p,
@@ -387,16 +383,4 @@ class FSM(graph):
                 for edge, tonode in self.graphDict[fromnode]:
                     f.write(fromnode.name+' '+tonode.name+' '+edge.symbol+'\n')        
 
-
-
-# for i in range(100):
-#     b = bin(i)[2:].zfill(8)
-#     if fsm.run(b):
-#         print(i, end='\t')
-# fsm.display()
-# min = fsm.minimize()
-# print(list(map(lambda x: str(x), min.nodes)))
-# print(list(map(lambda x: str(x), min.edges)))
-# min.display()
-# min.toFile('divisibleby4MIN.fsm', 'Minimized version of the divisible by 4 FSM')
 
